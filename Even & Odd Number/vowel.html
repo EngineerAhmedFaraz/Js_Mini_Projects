@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vowel & Consonant</title>
+  <!-- Custom CSS  -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: cornflowerblue;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    #container {
+      width: 800px;
+      height: 450px;
+      border: 1px solid white;
+      text-align: center;
+      box-shadow: 2px 2px 3px 2px gainsboro, -2px -2px 3px 2px black;
+      border-radius: 5px;
+      background-color: cyan;
+    }
+
+    #container h1 {
+      font-size: 35px;
+      font-weight: 600;
+      color: crimson;
+      margin: 50px auto;
+    }
+
+    #container label {
+      font-size: 25px;
+      font-weight: 500;
+    }
+
+    #container input {
+      font-size: 25px;
+      font-weight: 300;
+      padding: 5px;
+      margin-left: 5px;
+      background: white;
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid crimson;
+    }
+
+    #container .box {
+      position: relative;
+      width: 90%;
+      height: 150px;
+      background-color: white;
+      color: red;
+      font-size: 30px;
+      font-weight: 500px;
+      margin: 40px auto;
+      border: 2px solid black;
+      border-radius: 10px;
+    }
+
+    #container .box #result {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    #container #clickbtn {
+      width: 150px;
+      height: 40px;
+      font-size: 25px;
+      font-weight: 300;
+      padding: 5px;
+      background: white;
+      color: black;
+      margin-left: 5px;
+      border-radius: 10px;
+      outline: none;
+      border: 2px solid crimson;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="container">
+
+    <h1>Find Vowel & Consonant</h1>
+    <label>Type Single Keyword : </label>
+    <input type="text" id="input-search" placeholder="Type here..." autocomplete="off">
+    <button id="clickbtn">Check</button>
+    <div class="box">
+      <span id="result"></span>
+    </div>
+
+  </div>
+
+
+  <script>
+
+    const checkValue = document.getElementById('clickbtn');
+    checkValue.addEventListener('click', () => {
+      var search = document.getElementById('input-search').value;
+      // document.getElementById('result').innerHTML = search;
+
+      if ((search >= 'a') && (search <= 'z') || (search >= 'A') && (search <= 'Z')) {
+
+        if ((search == 'a') || (search == 'e') || (search == 'i') || (search == 'o') || (search == 'u')) {
+          var res = document.getElementById('result');
+          res.innerHTML = "<b>" + search + "</b>" + " is a Vowel";
+        }
+        else if ((search == 'A') || (search == 'E') || (search == 'I') || (search == 'O') || (search == 'U')) {
+          var res = document.getElementById('result');
+          res.innerHTML = "<b>" + search + "</b>" + " is a Vowel";
+        }
+        else {
+          var res = document.getElementById('result');
+          res.innerHTML = "<b>" + search + "</b>" + " is a consonat";
+        }
+
+      }
+      else {
+        var res = document.getElementById('result');
+        res.innerHTML = "<b>" + search + "</b>" + " is neither Vowel nor Consonant";
+      }
+
+    })
+
+  </script>
+</body>
+
+</html>

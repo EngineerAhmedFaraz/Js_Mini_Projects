@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  /* This is main point of lost your linear Gradient color from body  after use positions
+  then use (min-height: 100%) compare to (height: 100%); */
+  min-height: 100%; 
+}
+
+body{
+  font-family: 'Mouse Memoirs', sans-serif;
+  background: linear-gradient(to right, #00d2ff 0%, #3a47d5 100%);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+}
+
+#container {
+  width: 600px;
+  height: 400px;
+  box-shadow: 10px 10px 78px 14px rgba(0,0,0,1);
+  -webkit-box-shadow: 10px 10px 78px 14px rgba(0,0,0,1);
+  -moz-box-shadow: 10px 10px 78px 14px rgba(0,0,0,1);
+  /* background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);  */
+  background-color: white;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#container #btn{
+  width: 160px;
+  height: 55px;
+  background: linear-gradient(to right, #f55b21 0%, #3a47d5 100%);
+  font-size: 20px;
+  font-weight: 600;
+  color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  opacity: 0.8;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  border-radius: 15px;
+  box-shadow: 10px 10px 78px 14px rgb(0, 0, 0);
+  -webkit-box-shadow: 10px 10px 78px 14px rgb(0,0,0);
+  -moz-box-shadow: 10px 10px 78px 14px rgb(0,0,0);
+}

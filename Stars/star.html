@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stars Print </title>
+</head>
+<body>
+    <h1 id="textline">Wellcome to Star Galaxy</h1>
+    
+    <script>
+
+      const text = document.getElementById('textline');
+      text.style.color = "red";
+      text.style.fontSize = "45px";
+      text.style.textAlign = "center";
+      text.style.margin = "60px";
+      text.style.letterSpacing = "1px";
+      text.style.textTransform = "uppercase";
+      text.style.border = "1px solid blue";
+      text.style.padding = "20px";
+      text.style.backgroundColor = "black";
+      
+      // Code Star Now...:
+      // 1) - Down Start Pattern...
+      for(let i = 1; i <=5; i++){
+       // document.writeln('*'+'<br>'); // vertical star Pattern. 
+        for(let j = 1; j <= i; j++){
+          document.writeln("*");
+        }
+        document.writeln('<br>');
+      }
+
+      document.write("<br>");
+      // 2) - UP (reverse) Number Pattern...
+      for(let a = 5; a >= 1; a--){
+        for (let b = 1; b <=a; b++) {
+          document.write(b,' ');
+        }
+        document.write("<br>")
+      }
+      
+      document.write("<br>");
+      // 3) - Rectangular Star Pattern...
+
+      for(let c = 1; c <=5; c++){
+       // document.writeln('*'+'<br>'); // vertical star.
+        for(let d = 1; d <= 5; d++){
+          document.writeln("*");
+        }
+        document.writeln('<br>');
+      }
+
+      document.writeln('<br>');
+      // 4) - Whole Numbers Reverse Down Pattern. ..
+
+      for(let e = 1; e <= 5; e++){
+        for(let f = e; f >= 1 ; f--){
+          document.write(f);
+        }
+        document.write('<br>');
+      }
+
+      document.writeln('<br>');
+      // 5) - Reverse Numbers Pattern...
+
+      
+      for(let e = 5; e >= 1; e--){
+        for(let f = e; f >= 1 ; f--){
+          document.write(f);
+        }
+        document.write('<br>');
+      }
+
+      document.writeln('<br>');
+      // 6) - Reverse Start Pattern...
+
+     for(var g = 10; g >= 1; g--){
+
+      for(var h=1; h<=g; h++){
+        document.write(h," ");
+      }
+
+      document.write('<br/>')
+     }
+      // OR Method 
+      document.write('<br/>')
+
+      for(var g = 10; g >= 1; g--){
+
+        for(var h=g; h>=1; h--){
+          document.write(h," ");
+        }
+
+        document.write('<br/>')
+      }
+
+    </script>
+
+
+    
+</body>
+</html>

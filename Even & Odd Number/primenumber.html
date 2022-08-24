@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Numbers</title>
+</head>
+<body>
+  
+  <h1 id="text">Find Prime Number: </h1>
+  <br>
+  <br>
+
+
+  <script>
+    const t = document.getElementById('text');
+    t.style.color = 'red';
+    t.style.fontSize = '30px';
+
+    var number = prompt('Enter the number');
+
+    if(number == 1){
+      document.write(`${number} is neither prime nor composite`);
+    }
+    else if(number == -1){
+      document.write(`Negative number ${number} is not a prime `);
+    }else{
+
+      var primeNbr = true;
+  
+      for(var i = 2; i < number; i++){
+        if(number % i == 0){
+          primeNbr = false;
+        }
+      }
+  
+      if(primeNbr == true){
+            document.write(`${number} is a prime number`);
+          }
+          else{
+            document.write(`${number} is not a prime number`);
+      
+          }
+    }
+    
+
+
+  </script>
+</body>
+</html>

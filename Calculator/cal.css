@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#calculator{
+  width: 400px;
+  height: 450px;
+  box-shadow: 0 0 2px 5px gainsboro;
+  margin: 100px auto;
+}
+#screen-text{
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: end;
+  padding-right: 10px;
+  margin-bottom: 5px;
+}
+.cal-group{
+  width: 97px;
+  height: 76.5px;
+  font-size: 25px;
+  font-weight: 200;
+}
+
+.cal-group:hover{
+  background-color: paleturquoise;
+  color: black;
+}

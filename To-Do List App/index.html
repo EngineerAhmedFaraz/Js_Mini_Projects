@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Custom Font ICON  -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- --------------  -->
+  <!-- Custom CSS Link  -->
+  <link rel="stylesheet" href="style.css">
+  <!-- -----------  -->
+  <title>ToDo List</title>
+</head>
+
+<body>
+  <div id="nav" class="nav-wrapper">
+    <div class="nav-brand">
+      <span>ToDo List</span>
+    </div>
+    <div class="search-box">
+      <input type="text" id="search-items" class="search" placeholder="Search" autocomplete="off">
+    </div>
+  </div>
+
+  <div id="section" class="section-wrapper">
+    <h3>Todo List Application</h3>
+    <div class="search-container">
+      <div class="section-boxes">
+        <input type="text" id="inputValue" class="input-text" placeholder="Enter your task" autocomplete="off">
+        <input type="hidden" id="saveIndex" class="input-text" autocomplete="off">
+
+        <button id="btn1" class="btn-1">Add Task</button>
+        <button id="btn3" class="btn-1" style="display:none">Save</button>
+        <button id="btn2" class="btn-2">Delete All</button>
+      </div>
+      <div class="table-container">
+        <table class="table-boxes" id="tableInpt">
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Custom JS Link  -->
+  <script src="script.js"></script>
+  <!-- -----------  -->
+</body>
+
+</html>
